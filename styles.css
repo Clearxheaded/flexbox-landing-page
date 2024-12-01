@@ -1,10 +1,13 @@
 body {
     font-family: roboto;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* The header is properly implemented as of right now */
-.header {
+.header, .footer {
     background-color: #1f2937;
     padding: 0px;
     margin: 0;
@@ -12,20 +15,25 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 16px;
+    color: #F9faf8;
 }
+
 
 /* Hero text (main, secondary + image) */
 .hero {
     background-color: #1f2937;
     margin: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    gap: 20px;
+    flex: 1;
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .hero-main-text {
@@ -58,7 +66,8 @@ a {
     font-size: 18px;
 }
 
-img {
-    width: 500px;
+.hero-image {
+    width: 50%;
+    object-fit: cover;
     height: 300px;
 }
