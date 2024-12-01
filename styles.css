@@ -69,7 +69,7 @@ a {
 .hero-image img {
     background-color: grey;
     height: 300px;
-    width: 600px;
+    width: 500px;
 }
 
 button {
@@ -83,4 +83,58 @@ button {
     border-radius: 0.4em;
     border: 0;
     box-shadow: 0;
+}
+
+.content-page {
+    flex: 1;
+    flex-direction: row;
+}
+
+.information-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    margin: 25px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    border-color: #3882f6;
+}
+
+
+.content-container img {
+    width: 150px;
+    height: 150px;
+}
+
+.text {
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    justify-content: center; 
+    max-width: 300px;
+    margin-bottom: 20px;   
+}
+
+.box .border img {
+    width: 100%; 
+    height: auto; 
+    max-height: 150px; 
+}
+
+.box .text {
+    font-size: 16px;
+    color: #333;  
+    margin-top: 10px;  
+    text-align: center; 
 }
