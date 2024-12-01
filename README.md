@@ -1,0 +1,1 @@
+For this project I will be building an entire web page using HTML/CSS.
