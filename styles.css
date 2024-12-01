@@ -3,6 +3,7 @@ body {
     margin: 0;
 }
 
+/* The header is properly implemented as of right now */
 .header {
     background-color: #1f2937;
     padding: 0px;
@@ -10,6 +11,33 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 16px;
+}
+
+/* Hero text (main, secondary + image) */
+.hero {
+    background-color: #1f2937;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-main-text {
+    font-size: 48px;
+    color: #F9faf8;
+    font-weight: 900;
+}
+
+/* Make some gap between the header links */
+.header-links {
+    display: flex;
+    gap: 20px;
 }
 
 .header-logo {
@@ -18,7 +46,7 @@ body {
     font-weight: bold;
 }
 
-.header-links {
+.header-links, .hero-secondary-text {
     font-size: 18px;
     color: #e5e7eb;
     align-self: center;
@@ -28,4 +56,9 @@ a {
     text-decoration: none;
     color: #e5e7eb;
     font-size: 18px;
+}
+
+img {
+    width: 500px;
+    height: 300px;
 }
